@@ -1,0 +1,150 @@
+body {
+    background: #222831;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #393e46;
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    color: #ffd369;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffd369;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Section spacing and layout */
+
+main.content section {
+    min-height: 400px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 900px;
+    background: #393e46;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-section img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section .about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.image-section .about-flex p {
+    font-size: 1.25em;
+    line-height: 1.7;
+}
+
+.image-section .movie-poster {
+    max-width: 300px;
+    /* Increased from 180px */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-section ol,
+.list-section ul {
+    margin-left: 30px;
+    color: #eeeeee;
+    font-size: 1.1em;
+    /* Reduced from 1.25em */
+    line-height: 1.6;
+}
+
+.tableau-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 850px;
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 40px 10px;
+    background: #393e46;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    /* overflow-x: auto; */
+    overflow: scroll;
+}
+
+.tableau-section .tableauPlaceholder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    background: #222831;
+    color: #ffd369;
+    font-size: 1.1em;
+    margin-top: 60px;
+}
+
+
+/* Make section headers yellow */
+
+.video-section h2,
+.image-section h2,
+.list-section h2,
+.tableau-section h2 {
+    color: #ffd369;
+}
+
+.corner-anchor {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #ffd369;
+    color: #222831;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    transition: background 0.2s, color 0.2s;
+}
+
+.corner-anchor:hover {
+    background: #222831;
+    color: #ffd369;
+}
